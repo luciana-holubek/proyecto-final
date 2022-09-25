@@ -1,0 +1,29 @@
+{
+  "name": "seguros-correa-holubek",
+  "version": "1.0.0",
+  "description": "proyecto-final-desarrollo-web",
+  "main": "index.html",
+  "scripts": {
+    "build-css": "node-sass --include-path scss styles/main.scss styles/style.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luscziana/proyecto-final.git"
+  },
+  "keywords": [
+    "seguros",
+    "proyecto",
+    "desarrolloWeb"
+  ],
+  "author": "Luciana Correa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/luscziana/proyecto-final/issues"
+  },
+  "homepage": "https://github.com/luscziana/proyecto-final#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.3",
+    "nodemon": "^2.0.20"
+  }
+}
