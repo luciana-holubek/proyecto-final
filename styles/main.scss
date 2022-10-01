@@ -1,0 +1,61 @@
+@import "reset";
+@import "font";
+@import "color";
+@import "images";
+@import "animation";
+
+body,
+.navbar {
+    background-image: $bg;
+}
+
+.contacto {
+    display: flex;
+    flex-direction: column;
+    padding: 2em 1.5em 0 1.5em;
+    gap: 2em;
+}
+
+.contacto__informacion,
+.contacto__mensaje {
+    width: 100%;
+}
+
+.contacto__titulo,
+.contacto__subtitulo {
+    font-size: 1.5rem;
+}
+
+.botonEnviar {
+    background-color: white;
+    color: #e58e71;
+    border-radius: 2px solid;
+    padding: 0.5rem;
+    font-weight: bold;
+}
+
+.card {
+    padding: 0.6rem;
+    margin: 1rem;
+    gap: 1rem;
+    height: 15rem;  
+    
+}
+
+.col {
+    overflow: scroll !important;
+}
+
+@media screen and (min-width: 576px) {
+    .contacto {
+        flex-direction: row;
+        padding: 4em 3em 0 3em;
+    }
+
+    .active {
+        background-color: white;
+        border-radius: 30%;
+    }
+
+
+}
