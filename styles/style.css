@@ -7,13 +7,18 @@
 * {
   font-family: 'DM Sans', sans-serif; }
 
-.imagenContacto,
-.imagenInformacionUtil {
-  width: 100vw;
+.presentacion__imagen {
+  width: 100%;
   padding: 1rem; }
 
-.presentacion__imagen {
-  width: 5rem; }
+.imagenContacto,
+.imagenInformacionUtil,
+.imagenSeguros {
+  width: 100vw;
+  height: auto;
+  background-size: cover;
+  padding: 1rem;
+  justify-content: center; }
 
 .tracking-in-expand-fwd {
   -webkit-animation: tracking-in-expand-fwd 0.8s cubic-bezier(0.215, 0.61, 0.355, 1) both;
@@ -78,10 +83,40 @@ body,
 .navbar {
   background-image: linear-gradient(to right, #ffecd2 0%, #e58e71 100%); }
 
+.cuadradoTitulos, .container__redes {
+  padding: 1rem; }
+
+.presentacion {
+  display: flex;
+  flex-direction: column; }
+
+.presentacion__div,
+.marcas__subtitulo {
+  padding: 1rem; }
+
+.presentacion__titulo {
+  font-size: 1.5rem;
+  justify-content: center; }
+
+.presentacion__texto {
+  font-size: 1rem; }
+
+.carousel {
+  display: flex;
+  padding: 1rem;
+  max-width: 800px;
+  justify-content: center; }
+
+.card {
+  height: auto;
+  padding: 0.6rem;
+  margin: 1rem;
+  gap: 1rem; }
+
 .contacto {
   display: flex;
   flex-direction: column;
-  padding: 2em 1.5em 0 1.5em;
+  padding: 0 1.5em 0 1.5em;
   gap: 2em; }
 
 .contacto__informacion,
@@ -92,21 +127,12 @@ body,
 .contacto__subtitulo {
   font-size: 1.5rem; }
 
-.botonEnviar {
+.botonEnviar, .botonVerMas {
   background-color: white;
   color: #e58e71;
   border-radius: 2px solid;
   padding: 0.5rem;
   font-weight: bold; }
-
-.card {
-  padding: 0.6rem;
-  margin: 1rem;
-  gap: 1rem;
-  height: 15rem; }
-
-.col {
-  overflow: scroll !important; }
 
 @media screen and (min-width: 576px) {
   .contacto {
@@ -115,3 +141,11 @@ body,
   .active {
     background-color: white;
     border-radius: 30%; } }
+
+@media screen and (min-width: 992px) {
+  .presentacion {
+    flex-direction: row; }
+  .presentacion__div {
+    justify-content: end; }
+  .presentacion__imagen {
+    justify-content: start; } }

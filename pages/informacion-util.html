@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Seguros Paola Correa - Información útil</title>
+    <meta name="description" content="Productora Asesora de Seguros. Asegurá con confianza">
+    <meta name="keywords" content="seguros, siniestro, robo, accidente">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link rel="stylesheet" href="../styles/style.css">
@@ -49,45 +51,49 @@
     <div class="card-group row-cols-1 row-cols-md-2 row-cols-lg-3">
         <div class="col">
             <div class="card card1">
-                <img src="..." class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">ROBO / HURTO / INCENDIO / DESTRUCCIÓN TOTAL</h5>
                     <p class="card-text">Realizá la denuncia policial en la comisaría correspondiente al lugar del
                         hecho.
                     <p>Deben figurar todos los datos correctos de la unidad, coincidiendo con los de la cédula o
                         título: Nº DE DOMINIO/ MOTOR/CHASIS o CUADRO.
-                        Tenés un plazo de 3 días para hacer la denuncia de tu siniestro. Necesitarás la siguiente
-                        documentación:</p>
-                    <ul>
-                        <li>Título de propiedad</li>
-                        <li>DNI de Titular y cónyuge (si hubiere)</li>
-                        <li>Denuncia policial</li>
-                    </ul>
-                </div>
-                <div class="card-footer">
-                    <small class="text-muted">Last updated 3 mins ago</small>
+                        Tenés un plazo de
+                        3 días para hacer la denuncia de tu siniestro. Necesitarás la siguiente
+                        documentación:</p> <span id="dots">...</span> <span id="more">
+                        <ul>
+                            <li>Título de propiedad</li>
+                            <li>DNI de Titular y cónyuge (si hubiere)</li>
+                            <li>Denuncia policial</li>
+                        </ul>
+                    </span>
+                    </p>
+                    <button class="botonVerMas" onclick="myFunction()" id="myBtn">Ver más</button>
+
                 </div>
             </div>
         </div>
         <div class="col">
             <div class="card card2">
-                <img src="..." class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">¿CHOCASTE?</h5>
                     <p class="card-text">Tenés un plazo de 3 días para hacer la denuncia de tu siniestro.
-                        Intercambiá los datos personales y del seguro con el conductor del otro vehículo que
-                        participó en el accidente:
-                    <ul>
-                        <li>DNI y Licencia de conducir del conductor del otro vehículo</li>
-                        <li>Datos del titular del otro vehículo: Nombre y Apellido o Razón Social, DNI o CUIT según
-                            corresponda</li>
-                        <li>Marca, modelo, año, patente, motor y chasis/cuadro del otro vehículo</li>
-                        <li>Teléfono de contacto del conductor y del titular de la otra unidad</li>
-                    </ul>
-                    <p>Si es posible, obtené los datos de testigos que hayan visto el accidente: Nombre y Apellido,
+                        Si es posible, obtené los datos de testigos que hayan visto el accidente: Nombre y Apellido,
                         DNI y teléfono de contacto. Tomá nota y saca fotos de todos los daños propios y del otro
-                        vehículo.</p>
+                        vehículo.
+                        Intercambiá los datos personales y del seguro con el conductor del otro vehículo que
+                        participó en el accidente: </p> <span id="puntitos2"></span>
+                    <span id="mas2">
+                        <ul>
+                            <li>DNI y Licencia de conducir del conductor del otro vehículo</li>
+                            <li>Datos del titular del otro vehículo: Nombre y Apellido o Razón Social, DNI o CUIT según
+                                corresponda</li>
+                            <li>Marca, modelo, año, patente, motor y chasis/cuadro del otro vehículo</li>
+                            <li>Teléfono de contacto del conductor y del titular de la otra unidad</li>
+                        </ul>
+
+                    </span>
                     </p>
+                    <button class="botonVerMas" onclick="myFunction2()" id="botoncito2">Ver más</button>
                 </div>
                 <div class="card-footer">
                     <small class="text-muted">Last updated 3 mins ago</small>
@@ -96,83 +102,201 @@
         </div>
         <div class="col">
             <div class="card card3">
-                <img src="..." class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">DAÑOS PARCIALES AUTOS</h5>
                     <p class="card-text"> Tenés un plazo de 3 días para hacer la denuncia de tu siniestro.</p>
-                </div>
-                <div class="card-footer">
-                    <small class="text-muted">Last updated 3 mins ago</small>
                 </div>
             </div>
         </div>
         <div class="col">
             <div class="card card4">
-                <img src="..." class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">ACCIDENTE CON LESIONES</h5>
                     <p class="card-text">Tenés un plazo de 3 días para hacer la denuncia de tu siniestro.
-                    <p>Si es posible, intercambiá los datos personales y del seguro con el conductor del otro
-                        vehículo y/o lesionado, que participó en el accidente:</p>
-                    <ul>
-                        <li>DNI y Licencia de conducir del conductor del otro vehículo</li>
-                        <li>Datos del titular del otro vehículo: Nombre y Apellido o Razón Social, DNI o CUIT según
-                        corresponda</li>
-                        <li>Marca, modelo, año, patente, motor y chasis/cuadro del otro vehículo</li>
-                        <li>Teléfono de contacto del conductor y del titular de la otra unidad</li>
-                    <li>Si es ciclista o peatón, intentá conseguir datos personales, teléfono y dirección.</li></ul>
                     <p>Si es posible, obtené los datos de testigos que hayan visto el accidente: Nombre y Apellido,
-                    DNI y teléfono de contacto. Tomá nota y saca fotos de todos los daños propios y del otro
-                    vehículo.</p>
+                        DNI y teléfono de contacto. Tomá nota y saca fotos de todos los daños propios y del otro
+                        vehículo.</p>
                     </p>
-                </div>
-                <div class="card-footer">
-                    <small class="text-muted">Last updated 3 mins ago</small>
+                    <p>Por otro lado, intercambiá los datos personales y del seguro con el conductor del otro
+                        vehículo y/o lesionado, que participó en el accidente:</p>
+                    <span id="puntitos3">...</span> <span id="mas3">
+                        <ul>
+                            <li>DNI y Licencia de conducir del conductor del otro vehículo</li>
+                            <li>Datos del titular del otro vehículo: Nombre y Apellido o Razón Social, DNI o CUIT según
+                                corresponda</li>
+                            <li>Marca, modelo, año, patente, motor y chasis/cuadro del otro vehículo</li>
+                            <li>Teléfono de contacto del conductor y del titular de la otra unidad</li>
+                            <li>Si es ciclista o peatón, intentá conseguir datos personales, teléfono y dirección.</li>
+                        </ul>
+                    </span>
+                    <button class="botonVerMas" onclick="myFunction3()" id="botoncito3">Ver más</button>
                 </div>
             </div>
         </div>
         <div class="col">
             <div class="card card5">
-                <img src="..." class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">CRISTALES, CERRADURAS Y RUEDAS</h5>
                     <p class="card-text">Tenés un plazo de 3 días para hacer la denuncia de tu siniestro.
                     </p>
                 </div>
-                <div class="card-footer">
-                    <small class="text-muted">Last updated 3 mins ago</small>
-                </div>
             </div>
         </div>
         <div class="col">
             <div class="card card6">
-                <img src="..." class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">RECLAMOS DE TERCEROS</h5>
-                    <p class="card-text">La documentación que se te pide para iniciar el Reclamo de terceros es:
-                        <ul> 
+                    <p class="card-text">La documentación que se te pide para iniciar el Reclamo de terceros es: </p>
+                    <span id="puntitos4">...</span>
+                    <span id="mas4">
+                        <ul>
                             <li>Denuncia administrativa sellada por tu compañía de seguros</li>
                             <li>Certificado de cobertura</li>
                             <li>Cédula Verde o Título de Propiedad del Automotor</li>
                             <li>Registro de Conducir vigente al momento del siniestro</li>
-                            <li>Presupuesto original de reparación (el mismo deberá incluir el detalle del daño y el valor)</li>
-                            <li>Fotos del vehículo donde consten claramente la patente de la unidad y los daños reclamados</li></ul>
-                    </p>
-                </div>
-                <div class="card-footer">
-                    <small class="text-muted">Last updated 3 mins ago</small>
+                            <li>Presupuesto original de reparación (el mismo deberá incluir el detalle del daño y el
+                                valor)</li>
+                            <li>Fotos del vehículo donde consten claramente la patente de la unidad y los daños
+                                reclamados</li>
+                        </ul>
+                    </span>
+                    <button class="botonVerMas" onclick="myFunction4()" id="botoncito4">Ver más</button>
+
+
                 </div>
             </div>
         </div>
     </div>
 
+    <script>
+        function myFunction() {
+            var dots = document.getElementById("dots");
+            var moreText = document.getElementById("more");
+            var btnText = document.getElementById("myBtn");
 
+            if (dots.style.display === "none") {
+                dots.style.display = "inline";
+                btnText.innerHTML = "Read more";
+                moreText.style.display = "none";
+            } else {
+                dots.style.display = "none";
+                btnText.innerHTML = "Read less";
+                moreText.style.display = "inline";
+            }
+        }
+        function myFunction2() {
+            var otrosPuntitos = document.getElementById("puntitos2");
+            var masTexto = document.getElementById("mas2");
+            var otroBotoncito = document.getElementById("myBtn");
 
+            if (otrosPuntitos.style.display === "none") {
+                otrosPuntitos.style.display = "inline";
+                otroBotoncito.innerHTML = "Read more";
+                masTexto.style.display = "none";
+            } else {
+                otrosPuntitos.style.display = "none";
+                otroBotoncito.innerHTML = "Read less";
+                masTexto.style.display = "inline";
+            }
+        }
+
+        function myFunction3() {
+            var otrosPuntitos3 = document.getElementById("puntitos3");
+            var masTexto3 = document.getElementById("mas3");
+            var otroBotoncito3 = document.getElementById("myBtn");
+
+            if (otrosPuntitos3.style.display === "none") {
+                otrosPuntitos3.style.display = "inline";
+                otroBotoncito3.innerHTML = "Read more";
+                masTexto3.style.display = "none";
+            } else {
+                otrosPuntitos3.style.display = "none";
+                otroBotoncito3.innerHTML = "Read less";
+                masTexto3.style.display = "inline";
+            }
+        }
+        function myFunction4() {
+            var otrosPuntitos4 = document.getElementById("puntitos4");
+            var masTexto4 = document.getElementById("mas4");
+            var otroBotoncito4 = document.getElementById("myBtn");
+
+            if (otrosPuntitos4.style.display === "none") {
+                otrosPuntitos4.style.display = "inline";
+                otroBotoncito4.innerHTML = "Read more";
+                masTexto4.style.display = "none";
+            } else {
+                otrosPuntitos4.style.display = "none";
+                otroBotoncito4.innerHTML = "Read less";
+                masTexto4.style.display = "inline";
+            }
+        }
+    </script>
+    <style>
+        #more {
+            display: none;
+        }
+
+        #mas2 {
+            display: none;
+        }
+
+        #mas3 {
+            display: none;
+        }
+
+        #mas4 {
+            display: none;
+        }
+    </style>
     <img class="imagenInformacionUtil" src="../images/fondo5.jpg" alt="familiaSeguros">
+
+    <footer class="bg-light text-center text-white">
+        <!-- Grid container -->
+        <div class="container container__redes">
+            <!-- Section: Social media -->
+            <!-- Facebook -->
+            <a target="_blank" href="https://www.facebook.com/" role="button">
+                <i class="facebook"></i>
+                <img src="../images/facebook.png" alt="facebook" width="40" height="40" />
+            </a>
+
+            <!-- Google -->
+            <a target="_blank" href="https://www.gmail.com/" role="button">
+                <i class="gmail"></i>
+                <img src="../images/gmail.png" alt="gmail" width="40" height="40" />
+            </a>
+
+            <!-- Instagram -->
+            <a target="_blank" href="https://www.instagram.com/" role="button">
+                <i class="instagram"></i>
+                <img src="../images/instagram.jpg" alt="instagram" width="40" height="40" />
+            </a>
+
+            <!-- Linkedin -->
+            <a target="_blank" href="https://www.linkedin.com/" role="button">
+                <i class="linkedin"></i>
+                <img src="../images/linkedin.jfif" alt="linkedin" width="40" height="40" />
+            </a>
+
+            <!-- Whatsapp -->
+            <a target="_blank" href="https://wa.me/+5491126480394" role="button">
+                <i class="whatsapp"></i>
+                <img src="../images/whatsapp.png" alt="whatsapp" width="40" height="40" />
+            </a>
+            </a>
+        </div>
+
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+            © 2022 Copyright:
+            <a class="text-white" href="../index.html">Paola Correa</a>
+        </div>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
         crossorigin="anonymous"></script>
+
 </body>
 
 </html>

@@ -1,9 +1,20 @@
-.imagenContacto,
-.imagenInformacionUtil {
-    width: 100vw;
+
+.presentacion__imagen {
+    width: 100%;
     padding: 1rem;
 }
 
-.presentacion__imagen {
-    width: 5rem;
+// Mixin //
+@mixin imagenGrande ($ancho, $alto, $bg-size, $padding, $justify) {
+    width: $ancho;
+    height: $alto;
+    background-size: $bg-size;
+    padding: $padding;
+    justify-content: $justify;
+}
+
+.imagenContacto,
+.imagenInformacionUtil,
+.imagenSeguros {
+    @include imagenGrande (100vw, auto, cover, 1rem, center);
 }
